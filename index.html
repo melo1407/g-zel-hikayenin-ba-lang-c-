@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bu bizim aşkımız için 💘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h1>Bu bizim aşkımız için 💘</h1>
+    <input type="password" id="pwd" placeholder="Şifreyi gir...">
+    <button onclick="login()">Giriş</button>
+  </div>
+
+  <div id="app" style="display: none;">
+    <div id="menu-btn" onclick="toggleMenu()">☰ Menü</div>
+    <div id="menu" style="display: none;">
+      <button onclick="showSection('upload')">Resim Ekle</button>
+      <button onclick="showSection('gallery')">Resimleri Gör</button>
+    </div>
+
+    <div id="background-tree"></div>
+
+    <div id="upload-section" style="display: none;">
+      <h2>Resim Yükle 💌</h2>
+      <input type="file" id="fileInput" accept="image/*"><br><br>
+    </div>
+
+    <div id="gallery-section" style="display: none;">
+      <h2>Resimler 📷</h2>
+      <div id="gallery"></div>
+    </div>
+  </div>
+
+  <script src="cloudinary.js"></script>
+  <script src="main.js"></script>
+  <script src="leaf.js"></script>
+</body>
+</html>
