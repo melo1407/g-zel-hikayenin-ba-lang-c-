@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+  font-family: 'Dancing Script', cursive;
+}
+
+body {
+  margin: 0;
+  background-color: #ffdbe6;
+  overflow-x: hidden;
+}
+#login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40vh;
+}
+#login-screen input {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+}
+#login-screen button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: hotpink;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#menu-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+}
+#menu {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+#menu button {
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+#upload-section, #gallery-section {
+  padding: 20px;
+  margin-top: 80px;
+}
+#gallery img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+#sakura-tree {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  width: 90%;
+  opacity: 0.95;
+  z-index: 1;
+}
+.leaf {
+  position: fixed;
+  top: -50px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 9999;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+#music-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  z-index: 1000;
+}
