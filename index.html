@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bizim Galerimiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom, #ffe4f0, #ffcde3);
+      overflow-x: hidden;
+    }
+    .login-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    input, button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+    }
+    button {
+      background-color: #ff66a3;
+      color: white;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    .intro {
+      color: #b30059;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box" id="loginBox">
+  <div class="intro">
+    Bir gün birdenbire her şeyi bırakıp 200 km yol geldim.<br>
+    Sadece sana olan aşkımın sonsuzluğunu göstermek için... 💖<br>
+    Bu site de o büyük sevdanın bir hatırası...
+  </div>
+  <h2>Galerimize Giriş</h2>
+  <input type="password" id="password" placeholder="Şifreyi girin">
+  <button onclick="checkPassword()">Giriş Yap</button>
+</div>
+
+<div id="mainContent" class="hidden">
+  <h1 style="text-align:center; color:#b30059;">Bizim Galerimiz 🌸</h1>
+  <div class="gallery">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664969/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.53_c0799035_vqei1s.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664965/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.53_73db5f50_hw3vmi.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664960/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.53_557f072f_fat2s3.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664958/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.53_ac67af72_lkub0x.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664950/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.52_dd3b391a_bmptia.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664950/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.52_b086fdd5_pgfrzg.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664947/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.53_9db30f2e_indsgd.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664944/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.52_66b4c03a_xedn2l.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664937/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.51_c202179d_tltuw9.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664934/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.52_4fddd20e_mmguto.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664925/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.51_7af4359e_iz7c8r.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664924/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.51_bea23401_zhmfll.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664920/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.50_b6fe9b4e_dlykpq.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664919/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.50_1f632a35_jdn69i.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664914/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.49_0620b385_aqdepj.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664910/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.49_c8d7f3f4_lyvirz.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664910/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.49_d9128a34_wqmzpm.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664902/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.49_4a3feb0c_xj5fv5.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664902/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.49_1bcba3f3_hc4ol3.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664901/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.49_401eb88b_wnbb7z.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664889/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.48_1814c431_opmpfi.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664892/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.49_206f7699_mlx7cj.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664885/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.48_c784981f_wsygl5.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664875/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.48_68de5de8_ng1ljr.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664866/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.48_27dede2a_x3qfrq.jpg">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v1751664852/WhatsApp_G%C3%B6rsel_2025-07-05_saat_00.26.48_21aefc51_p9jbex.jpg">
+
+  </div>
+  <img src="https://i.ibb.co/SQWnrJW/sakura.gif" style="position:fixed; top:0; left:0; width:100%; height:100%; opacity:0.05; pointer-events:none;">
+  <audio controls autoplay loop style="position:fixed; bottom:10px; left:50%; transform:translateX(-50%); z-index:1000;">
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_6f6bfa97d2.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script>
+  function checkPassword() {
+    const input = document.getElementById('password').value;
+    if (input === 'aşk200km') {
+      document.getElementById('loginBox').style.display = 'none';
+      document.getElementById('mainContent').classList.remove('hidden');
+    } else {
+      alert('Şifre yanlış!');
+    }
+  }
+</script>
+
+</body>
+</html>
