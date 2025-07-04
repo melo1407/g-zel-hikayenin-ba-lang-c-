@@ -1,0 +1,1 @@
+# g-zel-hikayenin-ba-lang-c-
