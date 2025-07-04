@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş | Bizim Galerimiz</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #ffe4f0, #ffcde3);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 80%;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff66a3;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    .intro {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #b30059;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="intro">
+      Bir gün birdenbire her şeyi bırakıp 200 km yol geldim.<br>
+      Sadece sana olan aşkımın sonsuzluğunu göstermek için... 💖<br>
+      Bu site de o büyük sevdanın bir hatırası...
+    </div>
+    <h2>Galerimize Giriş</h2>
+    <input type="password" id="password" placeholder="Şifreyi girin">
+    <br>
+    <button onclick="checkPassword()">Giriş Yap</button>
+  </div>
+
+  <div id="mainContent" class="hidden">
+    <h1 style="text-align:center; color:#b30059;">Bizim Galerimiz 🌸</h1>
+    <div class="gallery" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:10px; padding:20px;">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_vqei1s.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_hw3vmi.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_fat2s3.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_lkub0x.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_bmptia.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_pgfrzg.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_indsgd.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_xedn2l.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_tltuw9.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_mmguto.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_iz7c8r.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_zhmfll.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_dlykpq.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_jdn69i.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_aqdepj.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_lyvirz.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_wqmzpm.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_xj5fv5.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_hc4ol3.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_wnbb7z.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_opmpfi.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_mlx7cj.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_wsygl5.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_ng1ljr.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_x3qfrq.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+<img src="https://res.cloudinary.com/dzdas79su/image/upload/v17516648xx/WhatsApp_Görsel_2025-07-05_saat_00.26.xx_p9jbex.jpg" style="width:100%; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+
+    </div>
+    <div class="sakura">
+      <img src="https://i.ibb.co/SQWnrJW/sakura.gif" style="width:100%; height:100%; object-fit:cover; opacity:0.1; position:fixed; top:0; left:0; pointer-events:none;">
+    </div>
+    <audio controls autoplay loop style="position:fixed; bottom:10px; left:50%; transform:translateX(-50%); z-index:1000;">
+      <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_7eabf86cd6.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('password').value;
+      if (input === 'aşk200km') {
+        document.querySelector('.login-box').style.display = 'none';
+        document.getElementById('mainContent').classList.remove('hidden');
+      } else {
+        alert('Şifre yanlış! Lütfen tekrar deneyin.');
+      }
+    }
+  </script>
+</body>
+</html>
